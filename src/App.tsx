@@ -1,10 +1,7 @@
-import { useState } from "react";
 import "@rainbow-me/rainbowkit/styles.css";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <div className="bg-zinc-900 flex justify-center items-center h-screen text-white">
       <div>
