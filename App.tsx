@@ -1,6 +1,5 @@
 import { useState } from "react";
 import logo from "./logo.svg";
-import "./App.css";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -9,7 +8,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p className="pb-2 text-sm">gm Vite + React + Tailwind CSS!</p>
+        <p className="pb-2 text-base">gm Vite + React + Tailwind CSS!</p>
         <p>
           <button
             className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-medium mb-2"

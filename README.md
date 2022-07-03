@@ -16,4 +16,6 @@ You can also link your GitHub repository on [Vercel's site](https://vercel.com)
 
 ### 🟢 A live version of the deployment is available [here](https://vite-tailwind-starter.vercel.app/)
 
-## To deploy to Fleek on IPFS
+## To deploy to [Fleek](https://fleek.co/) on IPFS
+
+☝️ Coming soon
