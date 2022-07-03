@@ -8,7 +8,7 @@
 
 `npm run dev` or `yarn dev`
 
-## To deploy to vercel
+## To deploy to Vercel
 
 Download the [Vercel CLI](https://vercel.com/docs/cli) and run `vercel` from the root directory of this repository
 
