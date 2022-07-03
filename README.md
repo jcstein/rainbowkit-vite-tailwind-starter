@@ -1,4 +1,4 @@
-# Welcome to the Vite + React + Tailwind CSS Starter!
+# Welcome to the Vite + React + Tailwind CSS + RainbowKit Starter!
 
 ## To install dependencies
 
