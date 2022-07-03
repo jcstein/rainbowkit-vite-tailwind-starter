@@ -4,19 +4,19 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="bg-zinc-900 flex min-h-screen items-center justify-center text-white">
+    <div className="bg-zinc-900 flex justify-center items-center h-screen text-white">
       <header>
-        <p className="pb-2 text-2xl">gm Vite + React + Tailwind CSS!</p>
+        <p className="mb-4 text-2xl">gm Vite + React + Tailwind CSS!</p>
         <p>
           <button
-            className="bg-blue-500 hover:bg-blue-700 font-bold py-2 px-4 rounded-full mb-2"
+            className="bg-blue-500 hover:bg-blue-700 font-bold py-2 px-4 rounded-full mb-4"
             type="button"
             onClick={() => setCount((count) => count + 1)}
           >
             count is: {count}
           </button>
         </p>
-        <p>
+        <p className="mb-4">
           Edit <code>App.tsx</code> and save to test HMR updates.
         </p>
         <p>
