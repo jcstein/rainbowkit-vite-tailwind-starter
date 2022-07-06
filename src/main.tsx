@@ -3,7 +3,11 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import "./index.css";
 import "@rainbow-me/rainbowkit/styles.css";
-import { getDefaultWallets, RainbowKitProvider } from "@rainbow-me/rainbowkit";
+import {
+  connectorsForWallets,
+  wallet,
+  RainbowKitProvider,
+} from "@rainbow-me/rainbowkit";
 import { chain, configureChains, createClient, WagmiConfig } from "wagmi";
 import { jsonRpcProvider } from "wagmi/providers/jsonRpc";
 import { publicProvider } from "wagmi/providers/public";
@@ -70,11 +74,38 @@ const { chains, provider } = configureChains(
   ]
 );
 
-// you can also add a custom wallet list containing any of the following wallets: Argent, Brave Wallet, Coinbase Wallet, Injected Wallet, Ledger Live, MetaMask, Rainbow, Trust Wallet, Steakwallet, imToken, or WalletConnect. Learn more here: https://www.rainbowkit.com/docs/custom-wallet-list
-const { connectors } = getDefaultWallets({
-  appName: "Vite Tailwind RainbowKit Wagmi Starter",
-  chains,
-});
+const connectors = connectorsForWallets([
+  {
+    groupName: "Recommended",
+    wallets: [
+      wallet.metaMask({ chains, shimDisconnect: true }),
+      wallet.walletConnect({ chains }),
+      wallet.coinbase({ appName: "Vite React RainbowKit Starter App", chains }),
+      wallet.rainbow({ chains }),
+    ],
+  },
+  {
+    groupName: "Others",
+    wallets: [
+      wallet.argent({ chains }),
+      wallet.brave({
+        chains,
+        shimDisconnect: true,
+      }),
+      wallet.imToken({ chains }),
+      wallet.injected({
+        chains,
+        shimDisconnect: true,
+      }),
+      wallet.ledger({
+        chains,
+        // infuraId: null,
+      }),
+      wallet.steak({ chains }),
+      wallet.trust({ chains, shimDisconnect: true }),
+    ],
+  },
+]);
 
 const wagmiClient = createClient({
   autoConnect: false,
