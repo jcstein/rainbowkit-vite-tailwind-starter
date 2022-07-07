@@ -7,7 +7,6 @@ function App() {
         <div className="flex justify-center text-sm sm:text-base md:text-3xl lg:text-4xl pb-10">
           gm ☀️ Vite + React + Tailwind CSS + RainbowKit!
         </div>
-        <p className="mb-4 text-2xl"></p>
         <div className="flex justify-center">
           <ConnectButton />
         </div>
