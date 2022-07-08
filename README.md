@@ -1,4 +1,4 @@
-# Welcome to the Vite + React + Tailwind CSS + RainbowKit Starter!
+# 🌈 Welcome to the Vite + React + Tailwind CSS + RainbowKit Starter!
 
 ## To install dependencies
 
@@ -14,7 +14,7 @@ Download the [Vercel CLI](https://vercel.com/docs/cli) and run `vercel` from the
 
 You can also link your GitHub repository on [Vercel's site](https://vercel.com)
 
-### 🟢 A live version of the deployment is available [here](https://vite-tailwind-starter.vercel.app/)
+### 🟢 A live version of the deployment is available [here](https://rainbowkit.me/)
 
 ## To deploy to [Fleek](https://fleek.co/) on IPFS
 
