@@ -4,9 +4,9 @@ import Twitter from "./Components/twitter";
 
 function App() {
   return (
-    <div className="bg-zinc-900 flex justify-center items-center h-screen text-white w-screen">
+    <div className="bg-zinc-900 flex justify-center items-center h-screen text-white w-screen p-10">
       <div>
-        <div className="flex justify-center text-xl sm:text-2xl md:text-3xl lg:text-4xl pb-10 font-bold text-center">
+        <div className="flex justify-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl pb-10 font-bold text-center">
           gm 🌈 RainbowKit + Vite + React + Tailwind CSS!
         </div>
         <div className="flex justify-center">
