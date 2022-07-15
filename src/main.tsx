@@ -8,6 +8,7 @@ import {
   connectorsForWallets,
   wallet,
   RainbowKitProvider,
+  midnightTheme,
 } from "@rainbow-me/rainbowkit";
 import { chain, configureChains, createClient, WagmiConfig } from "wagmi";
 import { jsonRpcProvider } from "wagmi/providers/jsonRpc";
@@ -117,7 +118,7 @@ const wagmiClient = createClient({
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <WagmiConfig client={wagmiClient}>
-      <RainbowKitProvider chains={chains} coolMode>
+      <RainbowKitProvider chains={chains} theme={midnightTheme()} coolMode>
         <App />
       </RainbowKitProvider>
     </WagmiConfig>
