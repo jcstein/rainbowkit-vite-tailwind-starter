@@ -38,7 +38,7 @@ function App() {
           !
         </h1>
         <div className="flex justify-center">
-          <ConnectButton />
+          <ConnectButton showBalance={false} />
         </div>
         <div className="flex flex-col pt-10">
           <Github />
